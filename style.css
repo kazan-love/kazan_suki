@@ -6,13 +6,13 @@ body, html {
     height: 100%;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .hero {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #000;
 }
 
 .hero-image {
@@ -22,7 +22,7 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7; /* 透明度の調整 */
+    opacity: 0.6;
 }
 
 .hero-text {
@@ -31,33 +31,13 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.5rem;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-.main-content {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #f4f4f4;
-    overflow: hidden;
-}
-
-.background-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.5; /* 透明度の調整 */
-}
-
-.content-overlay {
-    position: relative;
-    padding: 20px;
+.content {
+    padding: 40px;
     text-align: center;
 }
 
@@ -81,6 +61,14 @@ a:hover {
     text-decoration: underline;
 }
 
+.event-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 .footer {
     padding: 40px;
     text-align: center;
@@ -88,12 +76,8 @@ a:hover {
     color: #fff;
 }
 
-.footer a {
-    color: #1e90ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer a:hover {
-    text-decoration: underline;
+.footer-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
 }
