@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (scrollPosition > 300) {
             leftImage.style.opacity = '1';
-            leftImage.style.transform = 'translateX(0)';
+            leftImage.style.transform = 'translateX(100%)';
         }
         if (scrollPosition > 600) {
             rightImage.style.opacity = '1';
-            rightImage.style.transform = 'translateX(0)';
+            rightImage.style.transform = 'translateX(-100%)';
         }
     });
 
