@@ -1,77 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
+/* style.css */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-.parallax {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: 50%;
+    top: 0;
+    left: 0;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 2rem;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .content {
-    padding: 2rem;
-    overflow: hidden;
+    padding: 20px;
     text-align: center;
 }
 
-.text {
+.scroll-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
     opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 1s, transform 1s;
-    margin-bottom: 2rem;
-}
-
-.text h2 {
-    margin-bottom: 0.5rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input[type="submit"] {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
-
-@media (max-width: 768px) {
-    .text {
-        transform: translateY(50px);
-    }
+    transition: opacity 1s ease-in-out;
 }
