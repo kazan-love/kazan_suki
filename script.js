@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let scrollPosition = window.scrollY;
         if (scrollPosition > 100) {
             heroText.style.opacity = '1';
+            heroText.classList.add('permanent');
         }
     });
 
