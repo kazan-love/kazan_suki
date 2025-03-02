@@ -47,39 +47,18 @@ body, html {
     min-height: 100vh;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-a {
-    color: #1e90ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .overlay {
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .event-image {
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
     opacity: 0.6;
 }
@@ -97,6 +76,12 @@ a:hover {
 
 .overlay.from-left {
     transform: translateX(-100%);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
 }
 
 .footer {
