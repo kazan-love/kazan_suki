@@ -37,7 +37,7 @@ body, html {
 }
 
 .content {
-    padding: 40px;
+    padding: 80px 40px;
     text-align: center;
 }
 
@@ -64,9 +64,17 @@ a:hover {
 .event-image {
     width: 100%;
     max-width: 600px;
-    margin-top: 20px;
+    margin: 40px auto;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.event-image.left {
+    transform: translateX(-100%);
+}
+
+.event-image.right {
+    transform: translateX(100%);
 }
 
 .footer {
@@ -74,10 +82,4 @@ a:hover {
     text-align: center;
     background-color: #333;
     color: #fff;
-}
-
-.footer-image {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
 }

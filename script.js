@@ -1,7 +1,8 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
     const heroText = document.querySelector('.hero-text');
-    const eventImage = document.querySelector('.event-image');
+    const leftImage = document.querySelector('.event-image.left');
+    const rightImage = document.querySelector('.event-image.right');
 
     // 初回表示時のアニメーション
     window.addEventListener('scroll', function () {
@@ -10,7 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
             heroText.style.opacity = '1';
         }
         if (scrollPosition > 300) {
-            eventImage.style.opacity = '1';
+            leftImage.style.opacity = '1';
+            leftImage.style.transform = 'translateX(0)';
+        }
+        if (scrollPosition > 600) {
+            rightImage.style.opacity = '1';
+            rightImage.style.transform = 'translateX(0)';
         }
     });
 
