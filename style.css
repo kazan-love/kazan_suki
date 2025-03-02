@@ -10,64 +10,68 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-nav ul li {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-nav ul li a {
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    text-decoration: none;
-}
-
-.top-image img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
 }
 
 .content {
     padding: 2rem;
     overflow: hidden;
-}
-
-.text, .images {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 1s, transform 1s;
+    text-align: center;
 }
 
 .text {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1s;
     margin-bottom: 2rem;
 }
 
-.images img {
-    width: 45%;
-    margin: 2.5%;
+.text h2 {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
 }
 
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 0.5rem;
+    .text {
+        transform: translateY(50px);
     }
-    .images img {
-        width: 100%;
-        margin: 1rem 0;
-    }
-}
-
-.scroll-active .text, .scroll-active .images {
-    opacity: 1;
-    transform: translateX(0);
 }

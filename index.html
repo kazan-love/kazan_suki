@@ -9,33 +9,46 @@
 <body>
     <header>
         <h1>火山好きサミット</h1>
-        <nav>
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">サミットについて</a></li>
-                <li><a href="#">スケジュール</a></li>
-                <li><a href="#">登録</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section class="top-image">
-            <img src="top-image.jpg" alt="トップ画像">
+        <section class="parallax" style="background-image: url('volcano1.jpg');">
+            <div class="overlay">
+                <h2>火山好きサミット開催！</h2>
+                <p>開催日：２０２５年３月８日（土）</p>
+                <p>開催場所：鹿児島　桜島</p>
+                <p>詳細は、<a href="https://www.sakurajima-kinkowan-geo.jp/event/11028/" target="_blank">こちら</a></p>
+            </div>
         </section>
         <section class="content">
             <div class="text">
                 <h2>サミットについて</h2>
-                <p>火山について語り合うサミットです。</p>
+                <p>火山について語り合うサミットです。最新の研究や観測結果、火山愛好家同士の交流の場を提供します。</p>
             </div>
-            <div class="images">
-                <img src="image1.jpg" alt="イメージ1">
-                <img src="image2.jpg" alt="イメージ2">
+            <section class="parallax" style="background-image: url('volcano2.jpg');">
+                <div class="overlay">
+                    <h2>火山の魅力</h2>
+                </div>
+            </section>
+            <div class="text">
+                <h2>スケジュール</h2>
+                <p>サミットの開催日時は2025年3月8日です。詳細なスケジュールについては、後日発表いたします。</p>
+            </div>
+            <section class="parallax" style="background-image: url('volcano3.jpg');">
+                <div class="overlay">
+                    <h2>火山の安全</h2>
+                </div>
+            </section>
+            <div class="text">
+                <h2>問い合わせ</h2>
+                <form action="https://forms.gle/your-google-form-link" method="get" target="_blank">
+                    <input type="submit" value="Googleフォームでお問い合わせ">
+                </form>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 火山好きサミット. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
