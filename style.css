@@ -47,38 +47,11 @@ body, html {
     min-height: 100vh;
 }
 
-.overlay {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.event-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    opacity: 0.6;
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000; /* 黒色に設定 */
+.text-content {
+    color: #000;
     font-size: 1.5rem;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    background: rgba(255, 255, 255, 0.7); /* 背景を半透明に */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.overlay.from-left {
-    transform: translateX(-100%);
 }
 
 .social-icon {
