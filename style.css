@@ -51,7 +51,7 @@ body, html {
     position: relative;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }

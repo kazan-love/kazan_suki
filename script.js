@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let scrollPosition = window.scrollY;
         if (scrollPosition > 100) {
             heroText.style.opacity = '1';
+            heroText.classList.add('permanent');
         }
         if (scrollPosition > 300) {
             overlay.style.opacity = '1';
