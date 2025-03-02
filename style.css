@@ -75,7 +75,7 @@ body, html {
 }
 
 .large-text {
-    font-size: 2.5rem;
+    font-size: 3rem; /* 大きな文字 */
     font-weight: bold;
 }
 
